@@ -12,9 +12,8 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
-  /* background-color: #b3d3ef; */
   height: 100%;
-  background: #2858a5;
+  background-color: #2756A0;
   color: #ecffff;
 }
 .top {
@@ -132,6 +131,7 @@ fieldset {
 }
 .answer label {
   font-size: 20px;
+  background-color: #2756A0;
 }
 .submit-answer {
   font-size: 16px;
@@ -232,12 +232,4 @@ h2.quiz-end {
     font-size: 26px;
     margin-top: 20px;
   }  
-}
-
-@media (min-height: 850px) {
-  body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: linear-gradient(0deg, #2858a5, #42c3ff);
-  }
 }
