@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An intereactive quiz to learn about submarines">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One|Source+Sans+Pro" rel="stylesheet">
+  <title>Start Screen</title>
+</head>
+<body>
+  <header class="top" role="banner">
+    <h1 class="logo"><a href="#" class="home-link">Submarine Quiz</a></h1>
+  </header>
+  <main role="main">
+    <!-- Start Screen -->
+    <div class="view" id="start">
+      <h2 class="title">Submarines</h2>
+      <img src='img/submarine.png' alt='submarine graphic' class="graphic">
+      <p class="intro">Learn about the history and design of submarines in this fun interactive quiz!</p>
+      <button class="start">Start</button>
+    </div>
+    <!-- Question Screen -->
+    <div class="view" id="question">
+      <header class="status">
+        <div class="question-number">
+          <p class="current-count"></p>
+        </div>
+        <div class="score">
+          <p class="current-score"></p>
+        </div>
+      </header>
+      <img class="question-image" alt="image for question">
+      <form class="js-form">
+        <fieldset>
+          <legend class="question"></legend>
+          <div class="answer">
+            <input type="radio" id="choice0" name="radioAnswer" value="0" required>
+            <label for="choice0"></label>
+          </div>
+          <div class="answer">
+            <input type="radio" id="choice1" name="radioAnswer" value="1" required>
+            <label for="choice1"></label>
+          </div>
+          <div class="answer">
+            <input type="radio" id="choice2" name="radioAnswer" value="2" required>
+            <label for="choice2"></label>
+          </div>
+          <div class="answer">
+            <input type="radio" id="choice3" name="radioAnswer" value="3" required>
+            <label for="choice3"></label>
+          </div>
+        </fieldset>
+        <button type="submit" class="submit-answer">Submit Answer</button>
+      </form>
+    </div>
+    <!-- Correct Screen -->
+    <div class="view" id="correct">
+      <img src="img/stars.png" class="correct" alt="Five Gold Stars">
+      <h2 class="correct">Correct Answer!</h2>
+      <p class="current-score"></p>
+    </div>
+    <!-- Incorrect Screen -->
+    <div class="view" id="incorrect">
+      <h2 class="incorrect">Your answer wasn't correct.</h2>
+      <p class="incorrect"></p>
+      <p class="current-score"></p>
+    </div>
+    <!-- End Screen -->
+    <div class="view" id="quiz-end">
+      <img src="img/end-of-quiz.jpg" alt="Sunset Submarine">
+      <h2 class="quiz-end">Congradulations on finishing the Quiz!</h2>
+      <p>Your final score is: </p>
+      <p class="final-score"></p>
+      <p>We hope you have learned something about submarines and submarine history by taking this quiz.</p>
+      <button class="restart">Take the quiz again</button>      
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+</body>
+</html>
